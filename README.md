@@ -4,17 +4,25 @@ Computer engineering graduate from the University of Patras, looking for a
 junior role in cloud security, cloud engineering or security engineering. I
 build things, try to break them, and write down what actually happened.
 
-Currently: detection engineering on AWS, and a runtime authorisation gateway for
-tool-using LLM agents, which is also the subject of a paper in progress with the
-University of Patras.
+Currently: studying for AZ-104 (Microsoft Azure Administrator).
 
-**Working with:** AWS, Terraform, Kubernetes, Python, OPA/Rego, GitHub Actions, Sigma, KQL
+**Working with:** AWS, Azure, Terraform, Kubernetes, Python, OPA/Rego, GitHub Actions, Sigma, KQL
 
 ### Projects
 
-Each one has a "What I Learned" section that says what broke and what the wrong
-first attempt was. If you open only one, open the first and look in its
-`evidence/` folder.
+Each one says what broke and what the wrong first attempt was. If you open only
+one, open the first and watch its video.
+
+**[assume-hijacked](https://github.com/mikedemis1/assume-hijacked)**
+A support chat agent for a made-up electricity supplier, built on the assumption
+that the model is already hijacked. The model holds no password, no database
+connection and no route to the internet; every action it asks for goes through
+checks that ignore its words. Kubernetes with Cilium default-deny between every
+service, a risk engine that sends money moves to a human, 717 tests. The
+video shows Claude refusing on its own, then a scripted hijacked model trying
+four attacks that all stop, and 20 connections out of a tool pod that all time
+out. The Terraform for AKS with Kata nodes was applied once on Azure; the app
+has not run there yet.
 
 **[novapay-security-infra](https://github.com/mikedemis1/novapay-security-infra)**
 A three-account AWS organisation in Terraform: service control policies, an
